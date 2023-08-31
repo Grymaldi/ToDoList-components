@@ -1,0 +1,17 @@
+.nav {
+  background-color: #00000056;
+}
+
+.nav ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.nav a {
+    color: #4a26e7;
+    text-decoration: none;
+}
