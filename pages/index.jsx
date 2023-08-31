@@ -1,5 +1,4 @@
-import App from "../components/todoapp";
-
+import App from '../components/todo/Todoapp';
 
 export default function ToDoList() {
   return (
