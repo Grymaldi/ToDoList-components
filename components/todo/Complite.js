@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Delite from "./Delite";
+import css from "./todoapp.module.css"
 
 export default function Complite() {
   const [tasks, setTasks] = useState([
@@ -19,20 +21,23 @@ export default function Complite() {
 
   return (
     <>
-      <div>
-        {tasks &&
-          tasks.map((task) => {
-            return (
-              <li
-                onClick={() => todoCompleted(task.id)}
-                style={{
-                  textDecoration: task.completed ? "line-through" : null,
-                }}
-              >
-                {task.title}
-              </li>
-            );
-          })}
+      <div className={css.string}>
+        <div className="compl">
+          {tasks &&
+            tasks.map((task) => {
+              return (
+                <li
+                  onClick={() => todoCompleted(task.id)}
+                  style={{
+                    textDecoration: task.completed ? "line-through" : null,
+                  }}
+                >
+                  {task.title}
+                </li>
+              );
+            })}
+        </div>
+        <Delite />
       </div>
     </>
   );

@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
 }
-.list div{
+.string{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .list li {
   cursor: pointer;

@@ -12,7 +12,7 @@ export default function Delite() {
 
   return (
     <>
-      <div>
+      <div className="del">
         {tasks &&
           tasks.map((task) => {
             return (
