@@ -1,7 +1,9 @@
-import { input, setInput } from "./const";
+import { useState } from "react";
 import css from "./todoapp.module.css";
 
 export default function Input() {
+  const [input, setInput] = useState("");
+
   return (
     <>
       <input

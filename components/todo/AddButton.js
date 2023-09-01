@@ -1,6 +1,8 @@
-import { input, setInput, setTasks, tasks } from "./const";
+import { useState } from "react";
 
 export default function AddButton() {
+ const [input, setInput] = useState("");
+
   function addTask() {
     if (input.trim() !== "") {
       setTasks(tasks.concat([{ id: Date.now(), title: input }]));
